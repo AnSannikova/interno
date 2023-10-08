@@ -1,0 +1,14 @@
+@font-face {
+  font-family: DMSerifDisplay;
+  src: url(./DMSerifDisplay.woff2) format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url(./Jost-Variable.woff2) format('woff2 supports variations'),
+       url(./Jost-Variable.woff2) format('woff2-variations');
+	font-display: swap;
+	font-weight: 400 700;
+}
