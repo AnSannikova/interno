@@ -1,7 +1,14 @@
 :root {
   --main-font: 'Jost', sans-serif;
   --acent-font: 'DMSerifDisplay', sans-serif;
-  --main-text-color: #292F36;
-  --accent-color: #CDA274;
-  --light-accent-color: #F4F0EC;
+  --main-text-color: #292f36;
+  --accent-text-color: #4d5053;
+  --accent-color: #cda274;
+  --light-accent-color: #f4f0ec;
+  --bg-gradient-color: #e6e6e6;
+  --button-text-color: #fff;
+  --button-hover-dark-color: #393e43;
+  --button-hover-light-color: #d5ae84;
+  --card-bg-color: var(--button-text-color, #fff);
+  --section-border-radius: 70px;
 }

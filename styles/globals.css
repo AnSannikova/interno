@@ -39,6 +39,10 @@ ol {
   list-style: none;
 }
 
+address {
+  font-style: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;

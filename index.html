@@ -1,43 +1,586 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interno</title>
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Interno</title>
-  <link rel="icon" href="./images/favicon.ico" sizes="any">
-  <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./images/favicon.png">
-  <link rel="stylesheet" href="./fonts/fonts.css" />
-  <link rel="stylesheet" href="./styles/variables.css" />
-  <link rel="stylesheet" href="./styles/globals.css" />
-  <link rel="stylesheet" href="./styles/style.css" />
-</head>
-
-<body class="page">
-  <header class="header">
-    <div class="header__navigation conteiner">
-      <div class="logo">
-        <img class="logo__image" src="./svg/logo.svg" alt="Logotype">
-        <p class="logo__text">Interno</p>
+  <body class="page">
+    <div class="backdrop"></div>
+    <header class="header">
+      <div class="header__navigation conteiner gradient-background">
+        <div class="logo">
+          <img class="logo__image" src="./svg/logo.svg" alt="Logotype" />
+          <p class="logo__text">Interno</p>
+        </div>
+        <button type="button" class="header__menu-button">
+          <span class="menu-button"></span>
+          <span class="menu-button"></span>
+          <span class="menu-button"></span>
+        </button>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link_active link"
+                >Home</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">Pages</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">Project</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">Blog</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a class="header__menu-link">Home</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Pages</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Services</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Project</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Blog</a></li>
-          <li class="header__menu-item"><a href="#" class="header__menu-link">Contact</a></li>
+      <div class="header__banner">
+        <div class="header__text-section conteiner">
+          <h1 class="header__title">Let Your Home Be Unique</h1>
+          <p class="header__text">
+            There are many variations of the passages of lorem Ipsum
+            fromavailable, variations of the passages.
+          </p>
+          <button class="header__button button button_dark-color" type="button">
+            Get Started
+            <svg class="button__icon" viewBox="0 0 18 17">
+              <use href="./svg/arrow.svg#arrow" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main conteiner gradient-background">
+      <section class="work">
+        <div class="work__text-section">
+          <h3 class="work__title subtitle">Project Plan</h3>
+          <p class="work__text text">
+            There are many variations of the passages of lorem Ipsum from
+            available, majority.
+          </p>
+          <a href="#" class="button-link link">
+            Read More
+            <svg class="button-link__icon" viewBox="0 0 18 17">
+              <use href="./svg/arrow.svg#arrow" />
+            </svg>
+          </a>
+        </div>
+        <div class="work__text-section">
+          <h3 class="work__title subtitle">Interior Work</h3>
+          <p class="work__text text">
+            There are many variations of the passages of lorem Ipsum from
+            available, majority.
+          </p>
+          <a href="#" class="button-link link">
+            Read More
+            <svg class="button-link__icon" viewBox="0 0 18 17">
+              <use href="./svg/arrow.svg#arrow" />
+            </svg>
+          </a>
+        </div>
+        <div class="work__text-section">
+          <h3 class="work__title subtitle">Realization</h3>
+          <p class="work__text text">
+            There are many variations of the passages of lorem Ipsum from
+            available, majority.
+          </p>
+          <a href="#" class="button-link link">
+            Read More
+            <svg class="button-link__icon" viewBox="0 0 18 17">
+              <use href="./svg/arrow.svg#arrow" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__text-section">
+          <h2 class="about__title title">
+            We Create The Art Of Stylish Living Stylishly
+          </h2>
+          <p class="about__text text">
+            It is a long established fact that a reader will be distracted by
+            the of readable content of a page when lookings at its layouts the
+            points of using that it has a more-or-less normal.
+          </p>
+          <div class="about__address-section">
+            <div class="about__address-image"></div>
+            <a href="tel:+012345678" class="about__address-link link"
+              >012345678</a
+            >
+            <p class="about__address-text text">Call Us Anytime</p>
+          </div>
+          <button class="about__button button button_dark-color" type="button">
+            Get Free Estimate
+            <svg class="button__icon" viewBox="0 0 18 17">
+              <use href="./svg/arrow.svg#arrow" />
+            </svg>
+          </button>
+        </div>
+        <div class="about__image-section">
+          <picture>
+            <source srcset="./images/white-kitchen.avif" type="image/avif" />
+            <source srcset="./images/white-kitchen.webp" type="image/webp" />
+            <img
+              loading="lazy"
+              class="about__image"
+              src="./images/white-kitchen.png"
+              alt="Kitchen made in white shades with wood inserts."
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title title">What the People Thinks About Us</h2>
+        <ul class="reviews__list">
+          <li class="reviews__list-item">
+            <div class="user__content">
+              <img
+                class="user__image"
+                src="./images/avatar-1.png"
+                alt="User photo"
+              />
+              <p class="user__name subtitle">Nattasha Mith</p>
+              <p class="user__location">Sydney, USA</p>
+            </div>
+            <p class="reviews__text text">
+              Lorem Ipsum is simply dummy text of the typesetting industry.
+              Ipsum has been.
+            </p>
+          </li>
+          <li class="reviews__list-item">
+            <div class="user__content">
+              <img
+                class="user__image"
+                src="./images/avatar-2.png"
+                alt="User photo"
+              />
+              <p class="user__name subtitle">Raymond Galario</p>
+              <p class="user__location">Sydney, Australia</p>
+            </div>
+            <p class="reviews__text text">
+              Lorem Ipsum is simply dummy text of the typesetting industry.
+              Ipsum has been scrambled it to make a type book.
+            </p>
+          </li>
+          <li class="reviews__list-item">
+            <div class="user__content">
+              <img
+                class="user__image"
+                src="./images/avatar-3.png"
+                alt="User photo"
+              />
+              <p class="user__name subtitle">Benny Roll</p>
+              <p class="user__location">Sydney, New York</p>
+            </div>
+            <p class="reviews__text text">
+              Lorem Ipsum is simply dummy text of the typesetting industry.
+              Ipsum has been scrambled.
+            </p>
+          </li>
         </ul>
-      </nav>
-      <form class="search-form">
-        <button class="search-form__button" type="submit"></button>
-      </form>
-    </div>
-    <div class="header__banner"></div>
-  </header>
+      </section>
 
-</body>
+      <section class="clients">
+        <img src="./svg/modern-home.svg" alt="Modern home logo" />
+        <img
+          src="./svg/interior-style-vintage.svg"
+          alt="Interior style vintage logo"
+        />
+        <img src="./svg/brand.svg" alt="Brand logo" />
+        <img src="./svg/nature-home.svg" alt="Nature home logo" />
+        <img
+          src="./svg/classic-design-studio.svg"
+          alt="Classic design studio logo"
+        />
+      </section>
 
+      <section class="project">
+        <h2 class="project__title title">Follow Our Projects</h2>
+        <p class="project__text text">
+          It is a long established fact that a reader will be distracted by the
+          of readable content of page lookings at its layouts points.
+        </p>
+        <ul class="project__cards-list">
+          <li class="project__cards-item">
+            <a href="#" class="project__cards-link">
+              <article class="card">
+                <picture>
+                  <source srcset="./images/project-1.avif" type="image/avif" />
+                  <source srcset="./images/project-1.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="card__image"
+                    src="./images/project-1.png"
+                    alt="Scandinavian style kitchen."
+                  />
+                </picture>
+                <div class="card__text-section">
+                  <h3 class="card__title subtitle">Modern Kitchan</h3>
+                  <span class="card__nav-link text">Decor / Artchitecture</span>
+                  <div class="card__button">
+                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="project__cards-item">
+            <a href="#" class="project__cards-link">
+              <article class="card">
+                <picture>
+                  <source srcset="./images/project-2.avif" type="image/avif" />
+                  <source srcset="./images/project-2.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="card__image"
+                    src="./images/project-2.png"
+                    alt="Hallway interior."
+                  />
+                </picture>
+                <div class="card__text-section">
+                  <h3 class="card__title subtitle">Modern Hallway</h3>
+                  <span class="card__nav-link text">Decor / Artchitecture</span>
+                  <div class="card__button">
+                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="project__cards-item">
+            <a href="#" class="project__cards-link">
+              <article class="card">
+                <picture>
+                  <source srcset="./images/project-3.avif" type="image/avif" />
+                  <source srcset="./images/project-3.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="card__image"
+                    src="./images/project-3.png"
+                    alt="Wooden desk and chair."
+                  />
+                </picture>
+                <div class="card__text-section">
+                  <h3 class="card__title subtitle">Modern Workplace</h3>
+                  <span class="card__nav-link text">Decor / Artchitecture</span>
+                  <div class="card__button">
+                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="project__cards-item">
+            <a href="#" class="project__cards-link">
+              <article class="card">
+                <picture>
+                  <source srcset="./images/project-4.avif" type="image/avif" />
+                  <source srcset="./images/project-4.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="card__image"
+                    src="./images/project-4.png"
+                    alt="Living room designed in light colors with an emphasis on dark brown furniture and a red carpet."
+                  />
+                </picture>
+                <div class="card__text-section">
+                  <h3 class="card__title subtitle">Modern Living Room</h3>
+                  <span class="card__nav-link text">Decor / Artchitecture</span>
+                  <div class="card__button">
+                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="counter">
+        <div class="counter__text-section">
+          <div class="counter__text-block">
+            <p class="counter__accent-text">7</p>
+            <p class="counter__text text">Years Of Experiance</p>
+          </div>
+        </div>
+        <div class="counter__text-section">
+          <div class="counter__text-block">
+            <p class="counter__accent-text">85</p>
+            <p class="counter__text text">Success Project</p>
+          </div>
+        </div>
+        <div class="counter__text-section">
+          <div class="counter__text-block">
+            <p class="counter__accent-text">15</p>
+            <p class="counter__text text">Active Project</p>
+          </div>
+        </div>
+        <div class="counter__text-section">
+          <div class="counter__text-block">
+            <p class="counter__accent-text">95</p>
+            <p class="counter__text text">Happy CUstomers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog">
+        <h2 class="blog__title title">Articles & News</h2>
+        <p class="blog__text text">
+          It is a long established fact that a reader will be distracted by the
+          of readable content of a page when lookings at its layouts the points
+          of using.
+        </p>
+        <ul class="blog__cards-list">
+          <li class="blog__list-item">
+            <a href="#" class="blog__list-link">
+              <article class="blog-card">
+                <picture>
+                  <source srcset="./images/article-1.avif" type="image/avif" />
+                  <source srcset="./images/article-1.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="blog-card__image"
+                    src="./images/article-1.png"
+                    alt="Kitchan Design."
+                  />
+                </picture>
+                <div class="blog-card__text-section">
+                  <h3 class="blog-card__title subtitle">
+                    Let’s Get Solution For Building Construction Work
+                  </h3>
+                  <time class="blog-card__time" datetime="2022-12-26"
+                    >26 December, 2022</time
+                  >
+                  <div class="blog-card__button">
+                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="blog__list-item">
+            <a href="#" class="blog__list-link">
+              <article class="blog-card">
+                <picture>
+                  <source srcset="./images/article-2.avif" type="image/avif" />
+                  <source srcset="./images/article-2.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="blog-card__image"
+                    src="./images/article-2.png"
+                    alt="Kitchan Design."
+                  />
+                </picture>
+                <div class="blog-card__text-section">
+                  <h3 class="blog-card__title subtitle">
+                    Low Cost Latest Invented Interior Designing Ideas
+                  </h3>
+                  <time class="blog-card__time" datetime="2022-12-22"
+                    >22 December, 2022</time
+                  >
+                  <div class="blog-card__button">
+                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li class="blog__list-item">
+            <a href="#" class="blog__list-link">
+              <article class="blog-card">
+                <picture>
+                  <source srcset="./images/article-3.avif" type="image/avif" />
+                  <source srcset="./images/article-3.webp" type="image/webp" />
+                  <img
+                    loading="lazy"
+                    class="blog-card__image"
+                    src="./images/article-3.png"
+                    alt="Kitchan Design."
+                  />
+                </picture>
+                <div class="blog-card__text-section">
+                  <h3 class="blog-card__title subtitle">
+                    Best For Any Office & Business Interior Solution
+                  </h3>
+                  <time class="blog-card__time" datetime="2022-12-25"
+                    >25 December, 2022</time
+                  >
+                  <div class="blog-card__button">
+                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                      <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
+                    </svg>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__title title">Wanna join the interno?</h2>
+        <p class="contact__text text">
+          It is a long established fact will be distracted.
+        </p>
+        <button class="header__button button button_light-color" type="button">
+          Contact With Us
+          <svg class="button__icon" viewBox="0 0 18 17">
+            <use href="./svg/arrow.svg#arrow" />
+          </svg>
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content conteiner gradient-background">
+        <div class="footer__text-section">
+          <div class="footer__logo logo">
+            <img class="logo__image" src="./svg/logo.svg" alt="Logotype" />
+            <p class="logo__text">Interno</p>
+          </div>
+          <p class="footer__text text">
+            It is a long established fact that a reader will be distracted
+            lookings.
+          </p>
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a href="#" target="_blank" class="footer__social-list-link">
+                <img
+                  src="./svg/facebook.svg"
+                  alt="Icon Facebook"
+                  class="footer__social-list-image"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" target="_blank" class="footer__social-list-link">
+                <img
+                  src="./svg/twitter.svg"
+                  alt="Icon Twitter"
+                  class="footer__social-list-image"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" target="_blank" class="footer__social-list-link">
+                <img
+                  src="./svg/linkedin.svg"
+                  alt="Icon Linkedin"
+                  class="footer__social-list-image"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" target="_blank" class="footer__social-list-link">
+                <img
+                  src="./svg/instagram.svg"
+                  alt="Icon Instagram"
+                  class="footer__social-list-image"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation">
+          <h3 class="footer__title subtitle">Pages</h3>
+          <ul class="footer__navigation-list footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">About Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Our Projects</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Our Team</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Contact Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__services">
+          <h3 class="footer__title subtitle">Services</h3>
+          <ul class="footer__services-list footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Kitchan</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Living Area</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Bathroom</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Dinning Hall</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link text link">Bedroom</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__title subtitle">Contact</h3>
+          <address>
+            <ul class="footer__contact-list footer__list">
+              <li class="footer__list-item text">
+                55 East Birchwood Ave. Brooklyn, New York 11201
+              </li>
+              <li class="footer__list-item">
+                <a
+                  href="mailto:contact@interno.com"
+                  class="footer__list-link link text"
+                  >contact@interno.com</a
+                >
+              </li>
+              <li class="footer__list-item">
+                <a href="tel:+1234567890" class="footer__list-link link text"
+                  >(123) 456 - 7890</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+      <p class="footer__copyright text">
+        Copyright © Interno | Designed by Victorflow Templates
+      </p>
+    </footer>
+
+    <script src="./scripts/scripts.js"></script>
+  </body>
 </html>
