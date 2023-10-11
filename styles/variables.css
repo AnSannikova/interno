@@ -7,8 +7,6 @@
   --light-accent-color: #f4f0ec;
   --bg-gradient-color: #e6e6e6;
   --button-text-color: #fff;
-  --button-hover-dark-color: #393e43;
-  --button-hover-light-color: #d5ae84;
   --card-bg-color: var(--button-text-color, #fff);
   --section-border-radius: 70px;
 }

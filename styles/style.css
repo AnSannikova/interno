@@ -114,7 +114,7 @@
 
 .link {
   border-bottom: 1px solid transparent;
-  transition: all ease 0.3s;
+  transition: all ease 0.2s;
 }
 
 .link:hover {
@@ -162,9 +162,15 @@
   margin-block-end: 20px;
 }
 
+.header__button-link {
+  display: block;
+  inline-size: max-content;
+}
+
 .button {
-  border: none;
-  padding: 26px 48px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 22px 44px;
   border-radius: 18px;
   font-size: 18px;
   font-variation-settings: 'wght' 600;
@@ -175,6 +181,7 @@
   cursor: pointer;
   transition:
     background-color ease 0.3s,
+    color ease 0.3s,
     scale ease 0.1s;
 }
 
@@ -194,6 +201,7 @@
 }
 
 .button_dark-color {
+  border-color: var(--main-text-color, #292f36);
   background-color: var(--main-text-color, #292f36);
   box-shadow: 0 10px 20px 0 #c0c0c059;
 }
@@ -203,6 +211,7 @@
 }
 
 .button_light-color {
+  border-color: var(--accent-color, #cda274);
   background-color: var(--accent-color, #cda274);
   box-shadow: 0 10px 20px 0 #1f2022;
 }
@@ -213,13 +222,11 @@
 
 @media (hover: hover) {
 
-  .button_dark-color:hover {
-    background-color: var(--button-hover-dark-color, #393e43);
+  .button:hover {
+    background-color: #fff;
+    color: var(--main-text-color, #292f36);
   }
 
-  .button_light-color:hover {
-    background-color: var(--button-hover-light-color, #d5ae84);
-  }
 }
 
 .button:active {
@@ -245,17 +252,26 @@
 }
 
 .work {
-  padding: 0 20px;
   margin-block-end: 200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-  gap: 42px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
 }
 
 .work__text-section {
   display: grid;
   justify-items: center;
   text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  transition: background-color ease-in-out 0.2s;
+}
+
+@media (hover: hover) {
+
+  .work__text-section:hover {
+    background-color: var(--light-accent-color, #f4f0ec);
+  }
 }
 
 .work__title {
@@ -397,17 +413,17 @@
 }
 
 .reviews__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 20px;
-  overflow: auto;
 }
 
 .reviews__list-item {
   padding: 53px 37px;
   background-color: var(--card-bg-color, #fff);
   border-radius: 20px;
-  min-inline-size: 288px;
+  flex-basis: 370px;
+  flex-grow: 1;
 }
 
 .user__content {
@@ -605,9 +621,10 @@
   box-shadow: 0 10px 30px 0 #ffffff40;
   background-color: var(--card-bg-color, #fff);
   min-inline-size: 310px;
+  transition: background-color ease-in-out 0.3s;
 }
 
-.blog__list-item:nth-child(even) .blog-card {
+.blog-card:hover {
   background-color: var(--light-accent-color, #f4f0ec);
 }
 
@@ -644,16 +661,8 @@
   transition: background-color ease 0.3s;
 }
 
-.blog-card__button:hover {
-  background-color: var(--accent-color, #cda274);
-}
-
-.blog__list-item:nth-child(even) .blog-card__button {
+.blog-card:hover .blog-card__button {
   background-color: var(--card-bg-color, #fff);
-}
-
-.blog__list-item:nth-child(even) .blog-card__button:hover {
-  background-color: var(--accent-color, #cda274);
 }
 
 .blog-card__button-icon {
