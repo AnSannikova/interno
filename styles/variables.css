@@ -4,9 +4,10 @@
   --main-text-color: #292f36;
   --accent-text-color: #4d5053;
   --accent-color: #cda274;
+  --main-light-color: #fff;
   --light-accent-color: #f4f0ec;
   --bg-gradient-color: #e6e6e6;
-  --button-text-color: #fff;
-  --card-bg-color: var(--button-text-color, #fff);
+  --button-text-color: var(--main-light-color, #fff);
+  --card-bg-color: var(--main-light-color, #fff);
   --section-border-radius: 70px;
 }
