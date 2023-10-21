@@ -542,6 +542,7 @@
   justify-content: center;
   inline-size: 70px;
   block-size: 70px;
+  border: none;
   border-radius: 50%;
   background-color: var(--light-accent-color, #f4f0ec);
   transition: background-color ease 0.3s;
@@ -694,6 +695,7 @@
   justify-content: center;
   inline-size: 52px;
   block-size: 52px;
+  border: none;
   border-radius: 50%;
   background-color: var(--light-accent-color, #f4f0ec);
   transition: background-color ease 0.3s;

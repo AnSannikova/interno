@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/scripts.js" defer></script>
   </head>
 
   <body class="page">
     <div class="backdrop"></div>
+
     <header class="header">
       <div class="header__navigation conteiner gradient-background">
         <div class="logo">
@@ -57,7 +59,7 @@
           </p>
           <a href="#" class="header__button-link button button_dark-color">
             Get Started
-            <svg class="button__icon" viewBox="0 0 18 17">
+            <svg class="button__icon" viewBox="0 0 18 17" aria-hidden="true">
               <use href="./svg/arrow.svg#arrow" />
             </svg>
           </a>
@@ -75,7 +77,11 @@
           </p>
           <a href="#" class="button-link link">
             Read More
-            <svg class="button-link__icon" viewBox="0 0 18 17">
+            <svg
+              class="button-link__icon"
+              viewBox="0 0 18 17"
+              aria-hidden="true"
+            >
               <use href="./svg/arrow.svg#arrow" />
             </svg>
           </a>
@@ -88,7 +94,11 @@
           </p>
           <a href="#" class="button-link link">
             Read More
-            <svg class="button-link__icon" viewBox="0 0 18 17">
+            <svg
+              class="button-link__icon"
+              viewBox="0 0 18 17"
+              aria-hidden="true"
+            >
               <use href="./svg/arrow.svg#arrow" />
             </svg>
           </a>
@@ -101,7 +111,11 @@
           </p>
           <a href="#" class="button-link link">
             Read More
-            <svg class="button-link__icon" viewBox="0 0 18 17">
+            <svg
+              class="button-link__icon"
+              viewBox="0 0 18 17"
+              aria-hidden="true"
+            >
               <use href="./svg/arrow.svg#arrow" />
             </svg>
           </a>
@@ -131,7 +145,7 @@
             aria-controls="dialog"
           >
             Get Free Estimate
-            <svg class="button__icon" viewBox="0 0 18 17">
+            <svg class="button__icon" viewBox="0 0 18 17" aria-hidden="true">
               <use href="./svg/arrow.svg#arrow" />
             </svg>
           </button>
@@ -168,6 +182,7 @@
               & education.
             </p>
           </li>
+
           <li class="reviews__list-item">
             <div class="user__content">
               <img
@@ -183,6 +198,7 @@
               project’s.
             </p>
           </li>
+
           <li class="reviews__list-item">
             <div class="user__content">
               <img
@@ -202,16 +218,16 @@
       </section>
 
       <section class="clients">
-        <img src="./svg/modern-home.svg" alt="Modern home logo" />
+        <img src="./svg/modern-home.svg" alt="Modern home logo." />
         <img
           src="./svg/interior-style-vintage.svg"
-          alt="Interior style vintage logo"
+          alt="Interior style vintage logo."
         />
-        <img src="./svg/brand.svg" alt="Brand logo" />
-        <img src="./svg/nature-home.svg" alt="Nature home logo" />
+        <img src="./svg/brand.svg" alt="Brand logo." />
+        <img src="./svg/nature-home.svg" alt="Nature home logo." />
         <img
           src="./svg/classic-design-studio.svg"
-          alt="Classic design studio logo"
+          alt="Classic design studio logo."
         />
       </section>
 
@@ -238,15 +254,20 @@
                 <div class="card__text-section">
                   <h3 class="card__title subtitle">Modern Kitchan</h3>
                   <span class="card__nav-link text">Modern</span>
-                  <div class="card__button">
-                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                  <button class="card__button" type="button" aria-label="Open">
+                    <svg
+                      class="card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </article>
             </a>
           </li>
+
           <li class="project__cards-item">
             <a href="#" class="project__cards-link">
               <article class="card">
@@ -265,15 +286,20 @@
                     Winery Dry Creek Building
                   </h3>
                   <span class="card__nav-link text">Art Modern</span>
-                  <div class="card__button">
-                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                  <button class="card__button" type="button" aria-label="Open">
+                    <svg
+                      class="card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </article>
             </a>
           </li>
+
           <li class="project__cards-item">
             <a href="#" class="project__cards-link">
               <article class="card">
@@ -292,15 +318,20 @@
                     Creative Workplace Design
                   </h3>
                   <span class="card__nav-link text">Minimalist</span>
-                  <div class="card__button">
-                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                  <button class="card__button" type="button" aria-label="Open">
+                    <svg
+                      class="card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </article>
             </a>
           </li>
+
           <li class="project__cards-item">
             <a href="#" class="project__cards-link">
               <article class="card">
@@ -319,11 +350,15 @@
                     Light Ambience Sepia Design
                   </h3>
                   <span class="card__nav-link text">Scandinavian</span>
-                  <div class="card__button">
-                    <svg class="card__button-icon" viewBox="0 0 10 20">
+                  <button class="card__button" type="button" aria-label="Open">
+                    <svg
+                      class="card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </article>
             </a>
@@ -401,11 +436,19 @@
                     datetime="2022-12-26"
                     >26 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -446,11 +489,19 @@
                     datetime="2022-12-22"
                     >22 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -491,11 +542,19 @@
                     datetime="2022-12-25"
                     >25 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -536,11 +595,19 @@
                     datetime="2022-12-23"
                     >23 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -581,11 +648,19 @@
                     datetime="2022-12-23"
                     >23 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -626,11 +701,19 @@
                     datetime="2022-12-23"
                     >23 December, 2022</time
                   >
-                  <div class="blog-card__button">
-                    <svg class="blog-card__button-icon" viewBox="0 0 10 20">
+                  <button
+                    class="blog-card__button"
+                    type="button"
+                    aria-label="Open"
+                  >
+                    <svg
+                      class="blog-card__button-icon"
+                      viewBox="0 0 10 20"
+                      aria-hidden="true"
+                    >
                       <use href="./svg/arrow-no-tail.svg#arrow-no-tail" />
                     </svg>
-                  </div>
+                  </button>
                 </div>
               </a>
             </article>
@@ -646,7 +729,7 @@
           type="button"
         >
           Contact With Us
-          <svg class="button__icon" viewBox="0 0 18 17">
+          <svg class="button__icon" viewBox="0 0 18 17" aria-hidden="true">
             <use href="./svg/arrow.svg#arrow" />
           </svg>
         </button>
@@ -656,7 +739,11 @@
         <div class="dialog__content">
           <button class="dialog__close-button" type="button">
             <span class="visually-hidden">Close window</span>
-            <svg class="dialog__close-button-icon" viewBox="0 0 24 24">
+            <svg
+              class="dialog__close-button-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
               <use href="./svg/cross.svg#cross" />
             </svg>
           </button>
@@ -710,7 +797,7 @@
               type="submit"
             >
               Send Now
-              <svg class="button__icon" viewBox="0 0 18 17">
+              <svg class="button__icon" viewBox="0 0 18 17" aria-hidden="true">
                 <use href="./svg/arrow.svg#arrow" />
               </svg>
             </button>
@@ -835,7 +922,5 @@
         Copyright © Interno | Designed by Victorflow Templates
       </p>
     </footer>
-
-    <script src="./scripts/scripts.js"></script>
   </body>
 </html>
