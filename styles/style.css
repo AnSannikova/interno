@@ -733,8 +733,6 @@
 
 .dialog {
   display: block;
-  visibility: hidden;
-  opacity: 0;
   border: none;
   padding: 0;
   border-radius: 40px;
@@ -742,8 +740,12 @@
 }
 
 .dialog[open] {
-  visibility: visible;
   opacity: 1;
+}
+
+.dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .dialog::backdrop {
