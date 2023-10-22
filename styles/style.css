@@ -732,9 +732,18 @@
 }
 
 .dialog {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
   border: none;
   padding: 0;
   border-radius: 40px;
+  transition: visibility 0s, opacity ease-in-out 0.3s;
+}
+
+.dialog[open] {
+  visibility: visible;
+  opacity: 1;
 }
 
 .dialog::backdrop {
@@ -762,6 +771,7 @@
   border: 2px solid currentColor;
   border-radius: 50%;
   cursor: pointer;
+  transition: border-color ease 0.2s;
 }
 
 .dialog__close-button-icon {
@@ -769,6 +779,15 @@
   inline-size: 100%;
   block-size: 100%;
   fill: currentColor;
+  transition: fill ease 0.2s;
+}
+
+.dialog__close-button:hover {
+  border-color: var(--accent-color, #cda274);
+}
+
+.dialog__close-button:hover .dialog__close-button-icon {
+  fill: var(--accent-color, #cda274);
 }
 
 .dialog__title {
@@ -1114,6 +1133,10 @@
   .dialog__close-button {
     inset-inline-end: 20px;
     inset-block-start: 20px;
+  }
+
+  .blog-card {
+    min-inline-size: 280px;
   }
 
   .form-contact {
